@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #FFFBF0;
+}
+
+/* iOS safe area support */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1FAE5;
+  border-radius: 2px;
+}
+
+/* Smooth button press feedback */
+button:active {
+  transform: scale(0.97);
+}
+
+/* File input hidden */
+input[type='file'] {
+  display: none;
+}
+
+/* Voice player waveform animation */
+@keyframes wave {
+  from { height: 4px; }
+  to   { height: 28px; }
+}
+
+/* Voice player loading dots */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50%       { transform: translateY(-4px); opacity: 1; }
+}

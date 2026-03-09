@@ -1,0 +1,35 @@
+{
+  "name": "Kagaz AI — Aapke Kagaz Ka Matlab",
+  "short_name": "Kagaz AI",
+  "description": "Understand any government document in simple words. Free for all Indian citizens.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFBF0",
+  "theme_color": "#1B6B3A",
+  "orientation": "portrait-primary",
+  "lang": "en-IN",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Analyze a Document",
+      "short_name": "Analyze",
+      "description": "Upload a government document to analyze",
+      "url": "/"
+    }
+  ]
+}

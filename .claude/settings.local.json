@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(# Check common nvm/asdf/volta paths ls ~/.nvm/versions/node/)",
+      "Bash(mdfind -name node)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(/opt/homebrew/bin/npm install)",
+      "Bash(/opt/homebrew/bin/npm view @azure/ai-form-recognizer versions --json)",
+      "Bash(/opt/homebrew/bin/node -e \"const v=JSON.parse\\(require\\(''fs''\\).readFileSync\\(''/dev/stdin'',''utf8''\\)\\); console.log\\(v.slice\\(-5\\).join\\(''\\\\n''\\)\\)\")",
+      "Bash(/opt/homebrew/bin/node -e \":*)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(npm install @anthropic-ai/sdk --save)",
+      "Bash(node -e \":*)",
+      "Bash(python3 -c \":*)"
+    ]
+  }
+}

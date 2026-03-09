@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Full bleed background for maskable -->
+  <rect width="512" height="512" fill="#1B6B3A"/>
+  <!-- Slightly smaller document to fit safe zone -->
+  <rect x="156" y="116" width="200" height="260" rx="16" fill="white"/>
+  <polygon points="296,116 356,176 296,176" fill="#A7F3D0"/>
+  <polygon points="296,116 356,116 356,176" fill="#D1FAE5"/>
+  <rect x="186" y="206" width="140" height="12" rx="6" fill="#D1FAE5"/>
+  <rect x="186" y="232" width="140" height="12" rx="6" fill="#D1FAE5"/>
+  <rect x="186" y="258" width="100" height="12" rx="6" fill="#D1FAE5"/>
+  <circle cx="306" cy="356" r="56" fill="none" stroke="#F97316" stroke-width="20"/>
+  <line x1="348" y1="398" x2="390" y2="440" stroke="#F97316" stroke-width="20" stroke-linecap="round"/>
+</svg>

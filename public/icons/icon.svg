@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#1B6B3A"/>
+  <!-- Document body -->
+  <rect x="136" y="96" width="240" height="300" rx="20" fill="white"/>
+  <!-- Dog-ear fold -->
+  <polygon points="316,96 376,156 316,156" fill="#A7F3D0"/>
+  <polygon points="316,96 376,96 376,156" fill="#D1FAE5"/>
+  <!-- Document lines -->
+  <rect x="172" y="196" width="168" height="14" rx="7" fill="#D1FAE5"/>
+  <rect x="172" y="226" width="168" height="14" rx="7" fill="#D1FAE5"/>
+  <rect x="172" y="256" width="120" height="14" rx="7" fill="#D1FAE5"/>
+  <rect x="172" y="286" width="144" height="14" rx="7" fill="#D1FAE5"/>
+  <!-- Magnifying glass -->
+  <circle cx="320" cy="376" r="68" fill="none" stroke="#F97316" stroke-width="24"/>
+  <line x1="368" y1="424" x2="416" y2="472" stroke="#F97316" stroke-width="24" stroke-linecap="round"/>
+  <!-- Sparkle dot -->
+  <circle cx="188" cy="156" r="12" fill="#F97316"/>
+</svg>
