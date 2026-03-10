@@ -424,7 +424,7 @@ export default function FillPage() {
         )}
 
         {/* ── Filled form view ─────────────────────────────────────────────── */}
-        {(appState === 'filled' || isValidated) && fillResult && (
+        {(appState === 'filled' || appState === 'validating' || isValidated) && fillResult && (
           <div className="flex flex-col gap-4">
 
             {/* Summary bar */}

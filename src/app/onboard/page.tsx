@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef, useEffect, useCallback, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import {
   getProfile,
@@ -53,7 +53,7 @@ function getDocPreviewName(docType: DocType, data: any): string {
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
-export default function OnboardPage() {
+function OnboardContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const resetKey = searchParams.get('t')
@@ -368,5 +368,14 @@ export default function OnboardPage() {
         </button>
       </div>
     </div>
+  )
+}
+
+// useSearchParams() requires a Suspense boundary in Next.js 15
+export default function OnboardPage() {
+  return (
+    <Suspense>
+      <OnboardContent />
+    </Suspense>
   )
 }

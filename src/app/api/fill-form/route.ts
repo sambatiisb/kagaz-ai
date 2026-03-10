@@ -89,8 +89,7 @@ export async function POST(request: NextRequest) {
     const diClient = getDIClient()
     const poller   = await diClient.beginAnalyzeDocument(
       'prebuilt-layout',   // layout model is better for blank forms than prebuilt-document
-      buffer,
-      { contentType: file.type as 'image/jpeg' | 'image/png' | 'image/webp' }
+      buffer
     )
     const diResult = await poller.pollUntilDone()
 
@@ -128,7 +127,7 @@ export async function POST(request: NextRequest) {
       for (const cell of table.cells ?? []) {
         const region = cell.boundingRegions?.[0]
         if (!region?.polygon) continue
-        const bbox = polygonToBbox(region.polygon as number[] | undefined, W, H)
+        const bbox = polygonToBbox(region.polygon as unknown as number[] | undefined, W, H)
         if (!bbox) continue
         if (!rowMap.has(cell.rowIndex)) rowMap.set(cell.rowIndex, [])
         rowMap.get(cell.rowIndex)!.push({
